@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Smart City AI Dashboard</title>
+
   <script src="https://cdn.tailwindcss.com"></script>
+
   <style>
     body {
       background: #0f172a;
@@ -43,16 +45,23 @@
     }
   </style>
 </head>
+
 <body class="text-white">
 
   <!-- Navbar -->
   <nav class="flex justify-between items-center px-10 py-6 border-b border-slate-700 glass sticky top-0 z-50">
     <div>
-      <h1 class="text-3xl font-bold text-cyan-400">Smart City Solution</h1>
-      <p class="text-slate-400 text-sm">AI Pothole Detection & Repair Tracking System</p>
+      <h1 class="text-3xl font-bold text-cyan-400">
+        Smart City Solution
+      </h1>
+
+      <p class="text-slate-400 text-sm">
+        AI Pothole Detection & Repair Tracking System
+      </p>
     </div>
 
     <div class="flex gap-4 items-center">
+
       <div class="flex items-center gap-2 bg-green-500/20 px-4 py-2 rounded-xl border border-green-500/30">
         <div class="w-3 h-3 rounded-full bg-green-400 pulse-dot"></div>
         <span class="text-green-300">System Active</span>
@@ -61,22 +70,29 @@
       <button class="bg-cyan-500 hover:bg-cyan-400 px-5 py-2 rounded-xl font-semibold transition-all shadow-lg shadow-cyan-500/30">
         Live Monitoring
       </button>
+
     </div>
   </nav>
 
   <!-- Hero -->
   <section class="grid md:grid-cols-2 gap-8 px-10 py-16 items-center">
+
     <div>
+
       <h2 class="text-6xl font-bold leading-tight mb-6">
-        AI Powered <span class="text-cyan-400">Smart Road</span> Monitoring 🚀
+        AI Powered
+        <span class="text-cyan-400">Smart Road</span>
+        Monitoring 🚀
       </h2>
 
       <p class="text-slate-300 text-lg leading-relaxed mb-8">
-        Advanced AI cameras automatically detect potholes, monitor road damage,
-        assign repair teams, and provide live repair tracking across the city.
+        Advanced AI cameras automatically detect potholes,
+        monitor road damage, assign repair teams, and provide
+        live repair tracking across the city.
       </p>
 
       <div class="flex gap-4">
+
         <button class="bg-cyan-500 hover:scale-105 transition-all px-6 py-3 rounded-2xl font-semibold shadow-lg shadow-cyan-500/30">
           View Analytics
         </button>
@@ -84,30 +100,53 @@
         <button class="border border-cyan-400 hover:bg-cyan-500/10 px-6 py-3 rounded-2xl transition-all">
           Generate Report
         </button>
+
       </div>
     </div>
 
+    <!-- AI Box -->
     <div class="glass rounded-3xl p-8 floating shadow-2xl">
-      <div class="bg-gradient-to-r from-cyan-500/20 to-blue-500/20 rounded-3xl p-8 text-center border border-cyan-500/20">
-        <div class="text-8xl mb-4 animate-pulse">🛰️</div>
 
-        <h3 class="text-3xl font-bold mb-2">AI Detection Running</h3>
-        <p class="text-slate-300 mb-6">Scanning roads in real-time...</p>
+      <div class="bg-gradient-to-r from-cyan-500/20 to-blue-500/20 rounded-3xl p-8 text-center border border-cyan-500/20">
+
+        <div class="text-8xl mb-4 animate-pulse">
+          🛰️
+        </div>
+
+        <h3 class="text-3xl font-bold mb-2">
+          AI Detection Running
+        </h3>
+
+        <p class="text-slate-300 mb-6">
+          Scanning roads in real-time...
+        </p>
 
         <div class="w-full bg-slate-700 h-4 rounded-full overflow-hidden">
-          <div id="scanBar" class="bg-cyan-400 h-4 progress-bar" style="width: 82%"></div>
+          <div id="scanBar" class="bg-cyan-400 h-4 progress-bar" style="width:82%"></div>
         </div>
 
         <div class="mt-6 grid grid-cols-2 gap-4 text-left">
+
           <div class="glass p-4 rounded-2xl">
-            <h4 class="text-slate-400 text-sm">Detection Accuracy</h4>
-            <p class="text-3xl font-bold text-cyan-400">96%</p>
+            <h4 class="text-slate-400 text-sm">
+              Detection Accuracy
+            </h4>
+
+            <p class="text-3xl font-bold text-cyan-400">
+              96%
+            </p>
           </div>
 
           <div class="glass p-4 rounded-2xl">
-            <h4 class="text-slate-400 text-sm">Roads Scanned</h4>
-            <p class="text-3xl font-bold text-cyan-400">1,248</p>
+            <h4 class="text-slate-400 text-sm">
+              Roads Scanned
+            </h4>
+
+            <p class="text-3xl font-bold text-cyan-400">
+              1,248
+            </p>
           </div>
+
         </div>
       </div>
     </div>
@@ -115,6 +154,7 @@
 
   <!-- Stats -->
   <section class="grid md:grid-cols-4 gap-6 px-10 pb-10">
+
     <div class="glass p-6 rounded-3xl hover:scale-105 transition-all shadow-xl">
       <p class="text-slate-400 mb-2">Total Reports</p>
       <h2 class="text-5xl font-bold text-cyan-400">1,532</h2>
@@ -134,24 +174,126 @@
       <p class="text-slate-400 mb-2">Emergency Alerts</p>
       <h2 class="text-5xl font-bold text-red-400">12</h2>
     </div>
+
   </section>
 
-  <!-- Live Tracking Table -->
-  <section class="px-10 py-10">
-    <div class="glass rounded-3xl overflow-hidden shadow-2xl">
-      <div class="flex justify-between items-center p-6 border-b border-slate-700">
+  <!-- Upload Image -->
+  <section class="px-10 py-6">
+
+    <div class="glass rounded-3xl p-8 shadow-2xl">
+
+      <div class="flex justify-between items-center mb-6">
+
         <div>
-          <h2 class="text-3xl font-bold">Live Repair Tracking</h2>
-          <p class="text-slate-400 mt-1">AI Generated Real-Time Monitoring Data</p>
+          <h2 class="text-3xl font-bold">
+            Upload Pothole Image
+          </h2>
+
+          <p class="text-slate-400 mt-2">
+            Upload road damage images for AI analysis.
+          </p>
+        </div>
+
+        <div class="bg-cyan-500/20 border border-cyan-500/20 px-4 py-2 rounded-xl text-cyan-300">
+          AI Vision Enabled
+        </div>
+
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+
+        <!-- Upload -->
+        <div class="border-2 border-dashed border-cyan-500/30 rounded-3xl p-10 text-center hover:bg-cyan-500/5 transition-all">
+
+          <div class="text-7xl mb-4">📤</div>
+
+          <h3 class="text-2xl font-bold mb-2">
+            Upload Image
+          </h3>
+
+          <p class="text-slate-400 mb-6">
+            JPG, PNG Supported
+          </p>
+
+          <input
+            type="file"
+            id="imageUpload"
+            accept="image/*"
+            class="hidden"
+          />
+
+          <button
+            onclick="document.getElementById('imageUpload').click()"
+            class="bg-cyan-500 hover:bg-cyan-400 px-6 py-3 rounded-2xl font-semibold transition-all"
+          >
+            Select Image
+          </button>
+
+        </div>
+
+        <!-- Preview -->
+        <div class="glass rounded-3xl p-6 flex flex-col justify-center items-center">
+
+          <img
+            id="previewImage"
+            src="https://via.placeholder.com/400x250?text=AI+Image+Preview"
+            class="rounded-2xl w-full h-64 object-cover border border-slate-700"
+          />
+
+          <div class="mt-6 w-full">
+
+            <div class="flex justify-between mb-2">
+              <span class="text-slate-400">
+                AI Damage Detection
+              </span>
+
+              <span id="aiStatus" class="text-cyan-400">
+                Waiting For Upload
+              </span>
+            </div>
+
+            <div class="w-full bg-slate-700 h-4 rounded-full overflow-hidden">
+              <div
+                id="aiProgress"
+                class="bg-cyan-400 h-4 transition-all duration-1000"
+                style="width:0%"
+              ></div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Tracking -->
+  <section class="px-10 py-10">
+
+    <div class="glass rounded-3xl overflow-hidden shadow-2xl">
+
+      <div class="flex justify-between items-center p-6 border-b border-slate-700">
+
+        <div>
+          <h2 class="text-3xl font-bold">
+            Live Repair Tracking
+          </h2>
+
+          <p class="text-slate-400 mt-1">
+            AI Generated Real-Time Monitoring Data
+          </p>
         </div>
 
         <button class="bg-cyan-500 px-5 py-2 rounded-xl font-semibold hover:bg-cyan-400 transition-all">
           Export Data
         </button>
+
       </div>
 
       <div class="overflow-x-auto">
+
         <table class="w-full text-left">
+
           <thead class="bg-slate-800 text-slate-300">
             <tr>
               <th class="p-5">ID</th>
@@ -162,24 +304,80 @@
             </tr>
           </thead>
 
-          <tbody id="tableBody">
-          </tbody>
+          <tbody id="tableBody"></tbody>
+
         </table>
       </div>
     </div>
   </section>
 
-  <!-- Fake AI Logs -->
+  <!-- AI Logs -->
   <section class="px-10 pb-16">
-    <div class="glass rounded-3xl p-6 shadow-2xl">
-      <h2 class="text-2xl font-bold mb-6">AI Detection Logs</h2>
 
-      <div id="logs" class="space-y-4 text-sm text-slate-300 max-h-72 overflow-y-auto">
-      </div>
+    <div class="glass rounded-3xl p-6 shadow-2xl">
+
+      <h2 class="text-2xl font-bold mb-6">
+        AI Detection Logs
+      </h2>
+
+      <div
+        id="logs"
+        class="space-y-4 text-sm text-slate-300 max-h-72 overflow-y-auto"
+      ></div>
+
     </div>
   </section>
 
   <script>
+
+    // Upload Feature
+
+    const uploadInput = document.getElementById('imageUpload');
+    const previewImage = document.getElementById('previewImage');
+    const aiProgress = document.getElementById('aiProgress');
+    const aiStatus = document.getElementById('aiStatus');
+
+    uploadInput.addEventListener('change', function (e) {
+
+      const file = e.target.files[0];
+
+      if (file) {
+
+        const reader = new FileReader();
+
+        reader.onload = function(event) {
+
+          previewImage.src = event.target.result;
+
+          aiStatus.innerText = 'Analyzing Image...';
+
+          aiProgress.style.width = '20%';
+
+          setTimeout(() => {
+            aiProgress.style.width = '55%';
+          }, 1000);
+
+          setTimeout(() => {
+            aiProgress.style.width = '85%';
+          }, 2000);
+
+          setTimeout(() => {
+            aiProgress.style.width = '100%';
+
+            aiStatus.innerText =
+              'Pothole Detected Successfully ✅';
+
+          }, 3000);
+
+        };
+
+        reader.readAsDataURL(file);
+      }
+
+    });
+
+    // Fake Data
+
     const potholes = [
       {
         id: 'PH-1021',
@@ -214,29 +412,47 @@
     const tableBody = document.getElementById('tableBody');
 
     potholes.forEach(item => {
+
       const row = document.createElement('tr');
 
-      row.className = 'border-t border-slate-700 hover:bg-slate-800/40 transition-all';
+      row.className =
+        'border-t border-slate-700 hover:bg-slate-800/40 transition-all';
 
       row.innerHTML = `
         <td class="p-5 font-semibold">${item.id}</td>
         <td class="p-5">${item.location}</td>
+
         <td class="p-5">
           <span class="px-3 py-1 rounded-full bg-red-500/20 text-red-300 border border-red-500/20">
             ${item.severity}
           </span>
         </td>
-        <td class="p-5 text-cyan-400">${item.status}</td>
+
+        <td class="p-5 text-cyan-400">
+          ${item.status}
+        </td>
+
         <td class="p-5 w-72">
+
           <div class="w-full bg-slate-700 h-3 rounded-full overflow-hidden">
-            <div class="bg-cyan-400 h-3 progress-bar" style="width:${item.progress}%"></div>
+            <div
+              class="bg-cyan-400 h-3 progress-bar"
+              style="width:${item.progress}%"
+            ></div>
           </div>
-          <p class="mt-2 text-slate-400">${item.progress}% Completed</p>
+
+          <p class="mt-2 text-slate-400">
+            ${item.progress}% Completed
+          </p>
+
         </td>
       `;
 
       tableBody.appendChild(row);
+
     });
+
+    // Fake AI Logs
 
     const logs = [
       'AI Camera #12 detected pothole near Sector 21.',
@@ -254,13 +470,18 @@
     let index = 0;
 
     setInterval(() => {
+
       const div = document.createElement('div');
-      div.className = 'glass p-4 rounded-2xl border border-cyan-500/10';
+
+      div.className =
+        'glass p-4 rounded-2xl border border-cyan-500/10';
 
       const time = new Date().toLocaleTimeString();
 
       div.innerHTML = `
-        <span class="text-cyan-400 font-semibold">[${time}]</span>
+        <span class="text-cyan-400 font-semibold">
+          [${time}]
+        </span>
         ${logs[index % logs.length]}
       `;
 
@@ -271,12 +492,21 @@
       if (logContainer.children.length > 8) {
         logContainer.removeChild(logContainer.lastChild);
       }
+
     }, 2000);
 
+    // Animated AI Scan
+
     setInterval(() => {
+
       const scanBar = document.getElementById('scanBar');
-      scanBar.style.width = Math.floor(Math.random() * 100) + '%';
+
+      scanBar.style.width =
+        Math.floor(Math.random() * 100) + '%';
+
     }, 3000);
+
   </script>
+
 </body>
 </html>
